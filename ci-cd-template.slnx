@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/.github/" />
+  <Folder Name="/docs/" />
+  <Folder Name="/src/">
+    <Project Path="JaianX.Api/JaianX.Api.csproj" />
+  </Folder>
+  <Folder Name="/tests/" />
+</Solution>

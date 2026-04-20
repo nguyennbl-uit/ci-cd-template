@@ -1,0 +1,97 @@
+# ============================================================
+# .NET / C#
+# ============================================================
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vs/
+.vs/
+
+# Build output
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Test results & coverage
+TestResults/
+coverage/
+coveragereport/
+*.trx
+*.coverage
+*.coveragexml
+coverage.cobertura.xml
+
+# ============================================================
+# Secrets & credentials — NEVER commit these
+# ============================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*.cer
+appsettings.Local.json
+appsettings.*.Local.json
+secrets.json
+**/secrets.json
+
+# ============================================================
+# Docker
+# ============================================================
+.dockerignore.local
+
+# ============================================================
+# IDE / Editor
+# ============================================================
+# Visual Studio
+.vs/
+*.rsuser
+*.MojoSolution
+*.VC.db
+*.VC.opendb
+
+# Rider
+.idea/
+*.sln.iml
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# ============================================================
+# OS
+# ============================================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
