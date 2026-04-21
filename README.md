@@ -153,3 +153,5 @@ A Playwright integration is scaffolded in the file (commented out). To enable fu
 | [docs/docker.md](docs/docker.md) | Docker build, image tags, nginx, AOT notes |
 | [docs/health-endpoint.md](docs/health-endpoint.md) | How to add the `/health` endpoint required by the pipeline |
 | [docs/testing.md](docs/testing.md) | Coverage setup, test project scaffold, E2E |
+| [docs/setup-vps.md](docs/setup-vps.md) | VPS setup guide — từng bước từ đầu |
+| [docs/setup-self-hosted-runner.md](docs/setup-self-hosted-runner.md) | Self-hosted runner — tiết kiệm ~990 phút GitHub Actions/tháng |
