@@ -1,0 +1,101 @@
+# CODEOWNERS - Modular Monolith + Clean Architecture + Vertical Slice + DDD
+
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+
+# Format: <pattern> <owner> [<owner> ...]
+
+# ------------------------------------------------------------
+
+# Default Ownership
+
+# ------------------------------------------------------------
+
+- @3WLog/tech-lead @3WLog/backend-architect
+
+# ------------------------------------------------------------
+
+# Architecture Decision & Platform Files
+
+# ------------------------------------------------------------
+
+/.github/ @3WLog/tech-lead @3WLog/backend-architect
+/Dockerfile @3WLog/tech-lead @3WLog/backend-architect
+/nginx.conf @3WLog/tech-lead @3WLog/backend-architect
+/global.json @3WLog/tech-lead @3WLog/backend-architect
+/README.md @3WLog/tech-lead @3WLog/backend-architect
+/docs/ @3WLog/tech-lead @3WLog/backend-architect
+
+# ------------------------------------------------------------
+
+# CI/CD (Pipelines, Automation, Container Runtime)
+
+# ------------------------------------------------------------
+
+/.github/workflows/ @3WLog/tech-lead @3WLog/backend-architect
+/.github/actions/ @3WLog/tech-lead @3WLog/backend-architect
+/Dockerfile @3WLog/tech-lead @3WLog/backend-architect
+/docker-compose*.yml @3WLog/tech-lead @3WLog/backend-architect
+/docker-compose*.yaml @3WLog/tech-lead @3WLog/backend-architect
+/nginx.conf @3WLog/tech-lead @3WLog/backend-architect
+
+# ------------------------------------------------------------
+
+# Composition Root / API Host
+
+# ------------------------------------------------------------
+
+/ThreeW.Api/ @3WLog/tech-lead @3WLog/backend-architect
+
+# ------------------------------------------------------------
+
+# Shared Kernel (DDD)
+
+# ------------------------------------------------------------
+
+/src/**/SharedKernel/ @3WLog/tech-lead @3WLog/backend-architect
+/src/**/BuildingBlocks/ @3WLog/tech-lead @3WLog/backend-architect
+
+# ------------------------------------------------------------
+
+# Modular Monolith (module-first)
+
+# Each module owns its own layers in Clean Architecture.
+
+# ------------------------------------------------------------
+
+/src/Modules/_/Domain/ @3WLog/tech-lead @3WLog/backend-architect
+/src/Modules/_/Application/ @3WLog/tech-lead @3WLog/backend-architect
+/src/Modules/_/Infrastructure/ @3WLog/tech-lead @3WLog/backend-architect
+/src/Modules/_/Api/ @3WLog/tech-lead @3WLog/backend-architect
+
+# Vertical Slice (feature-based folders inside each module)
+
+/src/Modules/_/Application/Features/ @3WLog/tech-lead @3WLog/backend-architect
+/src/Modules/_/Api/Features/ @3WLog/tech-lead @3WLog/backend-architect
+
+# ------------------------------------------------------------
+
+# Data / Migrations
+
+# ------------------------------------------------------------
+
+**/Migrations/ @3WLog/db-team @3WLog/tech-lead
+**/\*.sql @3WLog/db-team @3WLog/tech-lead
+
+# ------------------------------------------------------------
+
+# Tests
+
+# ------------------------------------------------------------
+
+/tests/UnitTests/ @3WLog/qa-team
+/tests/IntegrationTests/ @3WLog/qa-team
+/tests/ArchitectureTests/ @3WLog/qa-team @3WLog/tech-lead
+
+# ------------------------------------------------------------
+
+# CODEOWNERS file itself
+
+# ------------------------------------------------------------
+
+/.github/CODEOWNERS @3WLog/tech-lead @3WLog/backend-architect

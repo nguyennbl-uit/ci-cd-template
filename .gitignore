@@ -1,27 +1,32 @@
 # ============================================================
 # .NET / C#
 # ============================================================
-bin/
-obj/
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
-*.vs/
-.vs/
-
-# Build output
-[Dd]ebug/
-[Rr]elease/
+**/[Bb]in/
+**/[Oo]bj/
+**/[Dd]ebug/
+**/[Rr]elease/
 x64/
 x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
-[Bb]in/
-[Oo]bj/
+artifacts/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+*.MojoSolution
+*.VC.db
+*.VC.opendb
+.vs/
+
+# Logs
 [Ll]og/
 [Ll]ogs/
+*.log
 
 # NuGet
 *.nupkg
@@ -31,7 +36,6 @@ packages/
 !**/packages/build/
 project.lock.json
 project.fragment.lock.json
-artifacts/
 
 # Test results & coverage
 TestResults/
@@ -66,19 +70,12 @@ secrets.json
 # ============================================================
 # IDE / Editor
 # ============================================================
-# Visual Studio
-.vs/
-*.rsuser
-*.MojoSolution
-*.VC.db
-*.VC.opendb
-
 # Rider
 .idea/
 *.sln.iml
 
 # VS Code
-.vscode/
+.vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
 

@@ -2,7 +2,7 @@
   <Folder Name="/.github/" />
   <Folder Name="/docs/" />
   <Folder Name="/src/">
-    <Project Path="JaianX.Api/JaianX.Api.csproj" />
+    <Project Path="ThreeW.Api/ThreeW.Api.csproj" />
   </Folder>
   <Folder Name="/tests/" />
 </Solution>

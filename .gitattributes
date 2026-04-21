@@ -1,0 +1,52 @@
+# ============================================================
+# Global normalization
+# ============================================================
+* text=auto eol=lf
+
+# ============================================================
+# Solution / source files
+# ============================================================
+*.sln text eol=crlf
+*.cs text diff=csharp
+*.csproj text
+*.props text
+*.targets text
+*.xml text
+*.json text
+*.md text
+
+# ============================================================
+# Scripts
+# ============================================================
+*.sh text eol=lf
+*.bash text eol=lf
+*.cmd text eol=crlf
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+
+# ============================================================
+# DevOps / containers
+# ============================================================
+Dockerfile text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.conf text eol=lf
+
+# ============================================================
+# Binary assets (disable text normalization/diff)
+# ============================================================
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.7z binary
+*.dll binary
+*.exe binary
+*.pdb binary
+*.nupkg binary
+*.snupkg binary
